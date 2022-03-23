@@ -288,15 +288,58 @@ main{
 /* aboutus main 시작 */
 .aboutus_wrap{
     position: absolute;
-    top: 25vh;
-    justify-content: center;
-    align-items: center;
+    top: 0px;
+    height: 100%;
 }
 .aboutus_main{
-  
+  bottom: 0;
+  overflow: hidden;
+  height: 80vh;
+  background-color: white;
+  display: flex;
 }
-.main_image{
 
+.aboutus_mainbox1{
+    position: relative;
+    top: 35vh;
+    background-color: white;
+    
+    height: 50vh;
+    width: 20vw;
+    max-width: 400px;
+    opacity: 0.6;
+    overflow: hidden;
+}
+    .mainbox1 img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    }   
+
+.aboutus_mainbox3{
+    position: relative;
+    top: 35vh;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+    height: 50vh;
+    width: 20vw;
+    opacity: 0.6;
+}
+.aboutus_mainbox5{
+    position: relative;
+    top: 35vh;
+    background-color: white;
+    
+    height: 50vh;
+    width: 20vw;
+    opacity: 0.6;
+}
+
+ 
+
+   
 /* aboutus main 끝 */
 
 /* contactus main 시작 */
@@ -316,6 +359,7 @@ main{
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    margin-top: 100px;
 }   
     .mainmap{
         align-items: center;
@@ -326,34 +370,34 @@ main{
         margin-right: 1%;
 
     }
-.shortcut{
-    position: relative;
-    height: 400px;
-    width: 40%;
-    max-width: 670px;
-    margin-left: 10px;
-    min-width: 300px;
+    .contact_info{
+        position: relative;
+        height: 400px;
+        width: 40%;
+        max-width: 670px;
+        min-width: 300px;
+        color: white;
 }
-    .contactinfo{
-        margin-top: 1px;
-        float: right;
-        height: 100px;
-        width: 100%;
-        font-size: 15px;
-        font-weight: bold;
-        color: white;
-    }
-    .counseling{
-        float: right;
-        margin-top: 10%;
-        height: 200px; 
-        width: 100%;
-        color: white;
-    }
+        .address{
+            height: 34%;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: gray;
+            padding: 10px;
+        }
+        .transport{
+            height: 34%;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: gray;
+            padding: 10px;
+        }
 
 /* contactus main 끝 */    
 
 footer{
+    padding-top: 10px;
     position: fixed;
     bottom: 0;
     height: 70px;
@@ -361,6 +405,7 @@ footer{
     background-color: rgb(146, 146, 146);
     display: flex;
     justify-content: center;
+    z-index: 99;
 }
     .footer1{
         padding-left: 30px;
@@ -411,21 +456,26 @@ footer{
         min-width: 300px;
     }
 
-    .shortcut{
-        top: 300px;
+    .contact_info{
+        top: 250px;
         display: flex;
         height: 200px;
         width: 81%;
-        min-width: 428px;
+        min-width: 400px;
+        max-height: 170px;
+        background-color: gray;
+        font-size: 10px;
+        padding: 10px;
     } 
 
-    .counseling{
-        margin-left: 10%;
-    }
+        .transport{
+            display: none;
+        }
+  
 
     a{
         text-decoration: none;
-        color: gray;
+        color: black;
         font-weight: bold;
     }
     .video-wrap{
@@ -504,6 +554,8 @@ footer{
         color: white;
         background-color: white;
         z-index: 75;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .footer5{
