@@ -4,64 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
 
     <title>TITAN GIM - BOXING X FITNESS</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <SCRipt src="/js/navbarBtn.js" defer> </SCRipt>
 </head>
 
 <body>
     <header>
-        <div class="snsvoid">
+        <div class="header_fixed">
+            <div class="logoline">
+                <div class="snsvoid">
+                </div>
+                <div class="logo">
+                       <center><img src="images/titan logo.png" alt="logo" ></center>
+                </div>
+                <div class="sns">
+                     <div class="snslink">
+                         <img src="images/facebook_white.png" alt="facebook" width="25px" height="25px">
+                     </div>
+                     <div class="snslink">
+                         <img src="images/insta_white.png" alt="insta" width="25px" height="25px">
+                     </div>
+                     <div class="snslink">
+                         <img src="images/twitter_white.png" alt="twitter" width="25px" height="25px">
+                     </div>
+                </div>
+            </div>
+       
+        
+       
+       <!-- <hr id="navba_topline" size="1" width="100%"> -->
+        <nav class="navbar">
             
-        </div>
-       <div class="logo">
-                        
-                <img src="images/titan logo.png" alt="logo" >
-            
-       </div>
-       <div class="sns">
-            <div class="snslink">
-                <img src="images/facebook_black_invert.png" alt="facebook" width="25px" height="25px">
-            </div>
-            <div class="snslink">
-                <img src="images/insta_black.png" alt="insta" width="25px" height="25px">
-            </div>
-            <div class="snslink">
-                <img src="images/twitter_black_invert.png" alt="twitter" width="25px" height="25px">
-            </div>
-       </div>
-       <div class="menu">
-        <ul class="navi">
-            <hr size="1" color="grey" width="1200px">
-            <li><a href="index.html">HOME</a>
-            </li>
-            <li><a href="aboutus.html">ABOUT US</a>
-            </li>
-            <li><a href="training.html">TRAINING</a>
-            </li>
-            <li><a href="match.html">MATCH</a>
-            </li>
-            <li><a href="blog.html">BLOG</a>
-            </li>
-            <li><a href="contactus.html">CONTACT US</a> 
-            </li>
-        </ul> 
-       </div>
-    </header>
-
-    <main>
-        <div class="mainvideo">
-            <video id="video" playsinline="" loop="" muted controls autoplay width="1200px"> 
+            <ul class="navbar_menu">
+                <li id="menuslot"><a href="index.html">HOME</a>
+                </li>
+                <li id="menuslot"><a href="aboutus.html">ABOUT US</a>
+                </li>
+                <li id="menuslot"><a href="training.html">TRAINING</a>
+                </li>
+                <li id="menuslot"><a href="match.html">MATCH</a>
+                </li>
+                <li id="menuslot"><a href="https://blog.naver.com/tjddlfdl0802" target="_blank">BLOG</a>
+                </li>
+                <li id="menuslot"><a href="contactus.html">CONTACT US</a> 
+            </ul>
+            <div class="togglecontainer">
                 
-                <source src="" type="video/webm">
+            <input type="checkbox" id="navbar_toggleBtn">
+                <label for="navbar_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+     </div>
+    </header>
+    <div class="container">
+        <div class="video-wrap">
+        <div class="mainvideo">
+            <video id="video" loop="" muted autoplay preload="auto">  
                 <source src="video/MAIN.mp4" type="video/mp4">
                 현재 브라우저가 이 동영상 재생을 지원하지 않습니다.
                 </video>
         </div>
-        
-
-        <div class="main_bottom1">
-            <ul class="tabmenu">
+    </div> 
+    </div>
+    <main>
+        <div class="main_wraper">
+            
+        <!--  <ul class="tabmenu">
                 <li class="active"><a href="#">공지사항</a>
                     <div class="notice">
                         <ul>
@@ -76,47 +92,41 @@
                         </ul>
                     </div>
                 </li>
-            </ul> <!-- tabmenu 끝 -->
+                </ul>  -->
+            <div class="main_bottom1">
+                BOXING X FITNESS
+                <hr style="border: solid 3px rgb(255, 255, 255);">
+            </div>
+            <div class="main_bottom2">
+            THAT'S ALL WE GOT <BR>
+            AND WE DAMN GOOD AT IT
+            </div>
         </div>
-        <div class="main_bottom2">
-            <img src="images/review1.jpg" alt="리뷰1" width="300px" height="153px">
-        </div>
-        <div class="main_bottom3">
-            <img src="images/review2.jpg" alt="리뷰2" width="300px" height="153px">
-        </div>
-
     </main>
+    <!-- <div class="long"> 
+    </div>  -->
 
     <footer>
         <div class="footer1">
-            <div class="footer11">
-                주소: 인천시 서구 가정로 364 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                4층 타이탄짐
-                <br><br>
-                Adress: 364, Gajeong-ro, Seo-gu, Incheon<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                4F, Titan Gym
-            </div>
-            <div class="footer12">
-                TEL:  0507-1318-5891 <br>
-                010-8909-5891
-            </div>
+            주소: 인천시 서구 가정로 364 4층 타이탄짐
+            <br><br>
+            Adress: Titan Gym, 4F, 364, Gajeong-ro, Seo-gu, Incheon
         </div>
         <div class="footer2">
-            <div class="footer21">
-                e-mail: tjddlfdl0802@naver.com
-            </div>
-            <div class="footer22">
-                대표: 박성일 <br>
-                Gym Master: Seong-Il Park
-            </div>
+            TEL:  0507-1318-5891 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  010-8909-5891
         </div>
         <div class="footer3">
+            e-mail: tjddlfdl0802@naver.com
+        </div>
+        <div class="footer4">
+            대표: 박성일 <br>
+            Gym Master: Seong-Il Park
+        </div>
+        <div class="footer5">
             Copyright 2022 @ TITAN GYM.  All Rights Reserved.
         </div>
     </footer>
-
 
 </body>
 </html>

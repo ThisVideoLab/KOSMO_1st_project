@@ -20,14 +20,15 @@ header{
     justify-content: center;
 }
 .video-wrap{
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 .video-wrap video{
     position: absolute;
+    top: 48px;
     left: 0%;
     transform: translateY(-24%);
-    height: 120vh;
+    height: 115vh;
 }
     .header_fixed{
         width: 100%;
@@ -66,6 +67,7 @@ header{
                 height: 200px;
                 width: 30%;
                 max-width: 300px;
+                color: white;
             }
                 .snslink{
                     float: right;
@@ -190,14 +192,14 @@ main{
         .main_bottom1{
             color: gray;
             text-align: center;
-            padding-top: 80px;
+            padding-top: 17%;
             height: 80px;
             width: 100%;
             font-weight: bold;
             font-size: 300%;
         }
         .main_bottom2{
-            padding-top: 30px;
+            padding-top: 10%;
             text-align: center;
             height: 100px;
             font-weight: bold;
@@ -281,6 +283,76 @@ main{
                 font-weight:bold;
             }
 
+/* home main 끝 */
+
+/* aboutus main 시작 */
+.aboutus_wrap{
+    position: absolute;
+    top: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus_main{
+  
+}
+.main_image{
+
+/* aboutus main 끝 */
+
+/* contactus main 시작 */
+.contactusmain-wrap{
+    position: absolute;
+    top: 280px; 
+    
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.contactusmain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}   
+    .mainmap{
+        align-items: center;
+        justify-content: center;    
+        height: 400px;
+        width: 30%;
+        min-width: 300px;
+        margin-right: 1%;
+
+    }
+.shortcut{
+    position: relative;
+    height: 400px;
+    width: 40%;
+    max-width: 670px;
+    margin-left: 10px;
+    min-width: 300px;
+}
+    .contactinfo{
+        margin-top: 1px;
+        float: right;
+        height: 100px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+    .counseling{
+        float: right;
+        margin-top: 10%;
+        height: 200px; 
+        width: 100%;
+        color: white;
+    }
+
+/* contactus main 끝 */    
+
 footer{
     position: fixed;
     bottom: 0;
@@ -329,9 +401,37 @@ footer{
 
 /* 미디어 쿼리 시작점 */
 @media screen and (max-width: 768px) {
-    .video-wrap{
+    .mainmap{
         position: absolute;
-        bottom: 0;
+        top: 0px;
+        align-items: center;
+        justify-content: center;    
+        height: 400px;
+        width: 80%;
+        min-width: 300px;
+    }
+
+    .shortcut{
+        top: 300px;
+        display: flex;
+        height: 200px;
+        width: 81%;
+        min-width: 428px;
+    } 
+
+    .counseling{
+        margin-left: 10%;
+    }
+
+    a{
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+    }
+    .video-wrap{
+        position: relative;
+        top: -170px;
+        min-width: 600px;
         width: 100%;
         z-index: 1;
     }
@@ -345,14 +445,14 @@ footer{
     }
     .main_bottom1{
         text-align: center;
-        padding-top: 200px;
+        padding-top: 40%;
         height: 100px;
         width: 100%;
         font-weight: bold;
         font-size: 250%;
     }
     .main_bottom2{
-        padding-top: 40px;
+        padding-top: 5%;
         text-align: center;
         height: 50px;
         font-weight: bold;

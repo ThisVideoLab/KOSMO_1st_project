@@ -4,125 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
 
     <title>TITAN GIM - BOXING X FITNESS</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <SCRipt src="/js/navbarBtn.js" defer> </SCRipt>
 </head>
+
 <body>
     <header>
-        <div class="snsvoid">
+        <div class="header_fixed">
+            <div class="logoline">
+                <div class="snsvoid">
+                </div>
+                <div class="logo">
+                       <center><img src="images/titan logo.png" alt="logo" ></center>
+                </div>
+                <div class="sns">
+                     <div class="snslink">
+                         <img src="images/facebook_white.png" alt="facebook" width="25px" height="25px">
+                     </div>
+                     <div class="snslink">
+                         <img src="images/insta_white.png" alt="insta" width="25px" height="25px">
+                     </div>
+                     <div class="snslink">
+                         <img src="images/twitter_white.png" alt="twitter" width="25px" height="25px">
+                     </div>
+                </div>
+            </div>
+       
+        
+       
+       <!-- <hr id="navba_topline" size="1" width="100%"> -->
+        <nav class="navbar">
             
-        </div>
-       <div class="logo">
-                        
-                <img src="images/titan logo.png" alt="logo" >
-            
-       </div>
-       <div class="sns">
-            <div class="snslink">
-                <img src="images/facebook_black_invert.png" alt="facebook" width="25px" height="25px">
+            <ul class="navbar_menu">
+                <li id="menuslot"><a href="index.html">HOME</a>
+                </li>
+                <li id="menuslot"><a href="aboutus.html">ABOUT US</a>
+                </li>
+                <li id="menuslot"><a href="training.html">TRAINING</a>
+                </li>
+                <li id="menuslot"><a href="match.html">MATCH</a>
+                </li>
+                <li id="menuslot"><a href="https://blog.naver.com/tjddlfdl0802" target="_blank">BLOG</a>
+                </li>
+                <li id="menuslot"><a href="contactus.html">CONTACT US</a> 
+            </ul>
+            <div class="togglecontainer">
+                
+            <input type="checkbox" id="navbar_toggleBtn">
+                <label for="navbar_toggleBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
-            <div class="snslink">
-                <img src="images/insta_black.png" alt="insta" width="25px" height="25px">
-            </div>
-            <div class="snslink">
-                <img src="images/twitter_black_invert.png" alt="twitter" width="25px" height="25px">
-            </div>
-       </div>
-       <div class="menu">
-        <ul class="navi">
-            <hr size="1" color="grey" width="1200px">
-            <li><a href="index.html">HOME</a>
-            </li>
-            <li><a href="aboutus.html">ABOUT US</a>
-            </li>
-            <li><a href="training.html">TRAINING</a>
-            </li>
-            <li><a href="match.html">MATCH</a>
-            </li>
-            <li><a href="blog.html">BLOG</a>
-            </li>
-            <li><a href="contactus.html">CONTACT US</a> 
-            </li>
-        </ul> 
-       </div>
+        </nav>
+     </div>
     </header>
 
     <main>
-        <hr size="1" color="grey" width="1200px">
-        <div class="contactusmain1">
-            <div class="mainmap">
-                <div id="daumRoughmapContainer1647310674493" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                <!--  지도 실행 스크립트: 직접 작성하지 않음. 카카오에서 제공하는 html 서비스 복사 붙여넣기함-->
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1647310674493",
-                        "key" : "29gih",
-                        "mapWidth" : "330px",
-                        "mapHeight" : "200px"
-                    }).render();
-                </script>
-            </div>
+        <div class="contactusmain-wrap">
+            <div class="contactusmain">
+                <div class="mainmap">
+                                        <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1648014083741" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%" ></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1648014083741",
+                            "key" : "29k3v",
+                        }).render();
+                    </script>
+                </div>
+                <div class="shortcut">
+                    <div class="contactinfo">
+                        주소: 인천시 서구 가정로 364 4층 타이탄짐 <br>
+                        Adress: Titan Gym, 4nd floor, 364, Gajeong-ro, Seo-gu, Incheon <br>
+                        <br>
+                        TEL:  0507-1318-5891  /  010-8909-5891 <br>
+                        e-mail: tjddlfdl0802@naver.com
+                    </div>            
+                    <div class="counseling">
+                        
+                        인근 교통편: <br>
+                        <br>
+                         <a href="http://kko.to/eq2HTL3Co" target="_blank">인천지하철<br> 2호선 가정시장역</a>
+                         <br><BR>
+                            
+                         <a href="http://kko.to/4f7YD305K" target="_blank">신현쇼핑 버스정거장</a>
+
+
+                    </div>
+                </div>
         </div>
-        <div class="shortcut">
-            <div class="contactinfo">
-                
-                주소: 인천시 서구 가정로 364 4층 타이탄짐 <br>
-                
-                Adress: 364, Gajeong-ro, Seo-gu, Incheon 4nd floor, Titan Gym<br>
-                
-                 <br>
-
-                TEL:  0507-1318-5891  /  010-8909-5891 <br>
-                e-mail: tjddlfdl0802@naver.com
-                
-            </div>            
-            <div class="counseling">
-                
-                상담 메일 박스 들어갈 곳
-
-            </div>
-
-        </div>
+    </div>
+        
 
     </main>
+    <!-- <div class="long"> 
+    </div>  -->
 
     <footer>
         <div class="footer1">
-            <div class="footer11">
-                <BR>
-                주소: 인천시 서구 가정로 364 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                4층 타이탄짐
-                <br><br>
-                Adress: 364, Gajeong-ro, Seo-gu, Incheon<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                4F, Titan Gym
-            </div>
-            <div class="footer12">
-                <BR>
-                TEL:  0507-1318-5891 <br>
-                010-8909-5891
-            </div>
+            주소: 인천시 서구 가정로 364 4층 타이탄짐
+            <br><br>
+            Adress: Titan Gym, 4F, 364, Gajeong-ro, Seo-gu, Incheon
         </div>
         <div class="footer2">
-            <div class="footer21">
-                <BR>
-                e-mail: tjddlfdl0802@naver.com
-            </div>
-            <div class="footer22">
-                <BR>
-                대표: 박성일 <br>
-                Gym Master: Seong-Il Park
-            </div>
+            TEL:  0507-1318-5891 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  010-8909-5891
         </div>
         <div class="footer3">
-            <BR>
+            e-mail: tjddlfdl0802@naver.com
+        </div>
+        <div class="footer4">
+            대표: 박성일 <br>
+            Gym Master: Seong-Il Park
+        </div>
+        <div class="footer5">
             Copyright 2022 @ TITAN GYM.  All Rights Reserved.
         </div>
     </footer>
-
 
 </body>
 </html>
