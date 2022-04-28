@@ -10,7 +10,8 @@ background-color: black;
 a{
 text-decoration: none;
 color: white;
-font-family: Consolas, 'Courier New', monospace;
+font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 
+'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
 }
 header{
 position: absolute;
