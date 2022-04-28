@@ -594,12 +594,14 @@ padding: 10px;
 
 /* contactus main 끝 */    
 
+/* footer  시작 */ 
+
 footer{
 padding-top: 10px;
 position: fixed;
 bottom: 0;
 height: 70px;
-width: 100%;
+width: 100vw;
 background-color: rgb(146, 146, 146);
 display: flex;
 justify-content: center;
@@ -639,6 +641,8 @@ height: 100px;
 color: white;
 }
 
+/* footer  끝 */ 
+
 /* 미디어 쿼리 시작점 --------------------------------------------------------*/
 
 
@@ -650,6 +654,11 @@ text-decoration: none;
 color: black;
 font-weight: bold;
 }
+.snslink{
+    margin-left:10px;
+
+}
+
 .navbar{
 background-color: gray;
 min-height: 40px;
@@ -890,15 +899,6 @@ font-size: 11px;
 
 /* 미디어 쿼리 종료지점 --------------------------------*/
 
-.magicbulletForFlexibleWeb{
-width: 50%;
-min-width: 500px;
-height: 50vh;
-min-height: 500px;
-
-display: flex;
-
-}
 }
 
 
