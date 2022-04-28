@@ -6,8 +6,7 @@ margin-left: auto;
 margin-right: auto;
 box-sizing: border-box;
 background-color: black;
-font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 
-'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+font-family: Consolas, 'Noto Serif KR', serif;
 }
 a{
 text-decoration: none;
@@ -205,6 +204,12 @@ top: 60vh;
 left: 0%;
 height: 115vh;
 min-width: 100wh;
+}
+
+.index_middle_line{
+    border: solid 3px;
+    background-color:  rgb(255, 255, 255);
+    width: 100wh;
 }
 
 /* index main 끝*/
