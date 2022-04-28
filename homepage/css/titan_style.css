@@ -10,6 +10,7 @@ background-color: black;
 a{
 text-decoration: none;
 color: white;
+font-family: Consolas, 'Courier New', monospace;
 }
 header{
 position: absolute;
@@ -713,7 +714,6 @@ color: white;
 .video-wrap{
 position: relative;
 top: -170px;
-/*min-width: 500px;*/
 width: 100%;
 height: 510px;
 z-index: 1;
@@ -730,16 +730,16 @@ z-index: 1;
 }
 .main_bottom1{
 text-align: center;
-margin-top: 20vh;
+margin-top: 15vh;
 height: 100px;
 width: 100%;
 font-weight: bold;
 font-size: 250%;
 }
 .main_bottom2{
-margin-top: 35vh;
+margin-top: 30vh;
 text-align: center;
-min-width: 400px;
+width: 100vw;
 height: 50px;
 font-weight: bold;
 font-size: 150%;
@@ -857,7 +857,7 @@ font-size: 120%;
 
 /*------------------------- training part 종료 */
 
-/* match part 시작 */
+/* ---------------------------match part 시작 */
 .match_mainbox{
 width: 500px;
 max-width: 500px;
