@@ -202,6 +202,7 @@ position: absolute;
 top: 60vh;
 left: 0%;
 height: 115vh;
+min-width: 100wh;
 }
 
 /* index main 끝*/
@@ -609,28 +610,28 @@ padding-left: 30px;
 font-size: 10px;
 height: 100px;
 color: white;
-min-width: 150px;
+width: 30vw;
 }
 .footer2{
 padding-left: 30px;
 font-size: 10px;
 height: 100px;
 color: white;
-min-width: 110px;
+width: 20vw;
 }
 .footer3{
 padding-left: 30px;
 font-size: 10px;
 height: 100px;
 color: white;
-min-width: 130px;
+width: 25vw;
 }
 .footer4{
 padding-left: 30px;
 font-size: 10px;
 height: 100px;
 color: white;
-min-width: 140px;
+width: 25vw;
 }
 .footer5{
 font-size: 1px;
